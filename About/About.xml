@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tribals Have Guns</name>
+	<author>Rapid Spade</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>RapidSpade.TribalsHaveGuns</packageId>
+	<description>Do you think it's strange that tribals get by on the Rim without scavenging and trading guns with their more sophisticated neighbors? If so, this mod is for you! Simply put, tribals now have a chance of spawning with basic firearms.
+
+Should be compatible with other mods.
+
+Should not cause any issues with existing saves.</description>
+</ModMetaData>
