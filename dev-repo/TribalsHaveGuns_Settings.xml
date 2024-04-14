@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+	<XmlExtensions.SettingsMenuDef>
+		<defName>RapidSpade.TribalsHaveGuns.Settings</defName>
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<label>Tribals Have Guns</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Restart for changes to take effect!</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<!--Tribal_Penitent settings-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>penitent_toggle</key>
+				<label>Enable guns for penitent tribals?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>If enabled, penitent tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Change min/max amount of money available for weapons:</text>
+			</li>
+			<li Class="XmlExtensions.Setting.Range">
+				<key>penitent_range</key>
+				<defaultValue>90~150</defaultValue>
+				<min>0</min>
+				<max>1000</max>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<!--Tribal_Archer settings-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>archer_toggle</key>
+				<label>Enable guns for archer tribals?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>If enabled, archer tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Change min/max amount of money available for weapons:</text>
+			</li>
+			<li Class="XmlExtensions.Setting.Range">
+				<key>archer_range</key>
+				<defaultValue>80~80</defaultValue>
+				<min>0</min>
+				<max>1000</max>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<!--Tribal_Warrior settings-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>warrior_toggle</key>
+				<label>Enable guns for warrior tribals?</label>
+				<defaultValue>true</defaultValue>
+				<tooltip>If enabled, warrior tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Change min/max amount of money available for weapons:</text>
+			</li>
+			<li Class="XmlExtensions.Setting.Range">
+				<key>warrior_range</key>
+				<defaultValue>150~260</defaultValue>
+				<min>0</min>
+				<max>1000</max>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<!--Tribal_Hunter settings-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>hunter_toggle</key>
+				<label>Enable guns for hunter tribals?</label>
+				<defaultValue>true</defaultValue>
+				<tooltip>If enabled, hunter tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Change min/max amount of money available for weapons:</text>
+			</li>
+			<li Class="XmlExtensions.Setting.Range">
+				<key>hunter_range</key>
+				<defaultValue>100~260</defaultValue>
+				<min>0</min>
+				<max>1000</max>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<!--Tribal_Berserker settings-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>berserker_toggle</key>
+				<label>Enable guns for berserker tribals?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>If enabled, berserker tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Change min/max amount of money available for weapons:</text>
+			</li>
+			<li Class="XmlExtensions.Setting.Range">
+				<key>berserker_range</key>
+				<defaultValue>300~300</defaultValue>
+				<min>0</min>
+				<max>1000</max>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<!--Tribal_HeavyArcher settings-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>heavyarcher_toggle</key>
+				<label>Enable guns for heavy archer tribals?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>If enabled, heavy archer tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Change min/max amount of money available for weapons:</text>
+			</li>
+			<li Class="XmlExtensions.Setting.Range">
+				<key>heavyarcher_range</key>
+				<defaultValue>250~250</defaultValue>
+				<min>0</min>
+				<max>1000</max>
+			</li>
+			
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<!--Tribal_RangedChief settings-->
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>chief_toggle</key>
+				<label>Enable guns for ranged tribal chiefs?</label>
+				<defaultValue>true</defaultValue>
+				<tooltip>If enabled, ranged tribal chiefs have a chance to spawn with advanced guns.</tooltip>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+</Defs>

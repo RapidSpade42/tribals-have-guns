@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--Penitent tribal patches-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<key>pentient_toggle</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Penitent"]/weaponTags</xpath>
+				<value>
+					<li>Gun</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+    <modId>RapidSpade.TribalsHaveGuns</modId>
+    <key>penitent_range</key>
+    <defaultValue>90~150</defaultValue>
+    <apply>
+        <Operation Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="Tribal_Penitent"]/weaponMoney</xpath>
+			<value>
+				<weaponMoney>{penitent_range}</weaponMoney>
+			</value>
+		</Operation>
+    </apply>
+	</Operation>
+</Patch>
