@@ -6,7 +6,7 @@
 		<label>Tribals Have Guns</label>
 		<settings>
 			<li Class="XmlExtensions.Setting.Text">
-				<text>Restart for changes to take effect!</text>
+				<text>RESTART FOR CHANGES TO TAKE EFFECT!</text>
 				<font>Medium</font>
 				<anchor>Middle</anchor>
 			</li>
@@ -124,20 +124,6 @@
 				<min>0</min>
 				<max>1000</max>
 			</li>
-			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			
-			<!--Tribal_RangedChief settings-->
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>chief_toggle</key>
-				<label>Enable guns for ranged tribal chiefs?</label>
-				<defaultValue>true</defaultValue>
-				<tooltip>If enabled, ranged tribal chiefs have a chance to spawn with advanced guns.</tooltip>
-			</li>
-
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			
-			<li Class="XmlExtensions.Setting.ResetSettings"/>
 		</settings>
 	</XmlExtensions.SettingsMenuDef>
 </Defs>
