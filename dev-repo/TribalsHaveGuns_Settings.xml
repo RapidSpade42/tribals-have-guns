@@ -134,6 +134,10 @@
 				<defaultValue>true</defaultValue>
 				<tooltip>If enabled, ranged tribal chiefs have a chance to spawn with advanced guns.</tooltip>
 			</li>
+
+			<li Class="XmlExtensions.Setting.GapLine"/>
+			
+			<li Class="XmlExtensions.Setting.ResetSettings"/>
 		</settings>
 	</XmlExtensions.SettingsMenuDef>
 </Defs>

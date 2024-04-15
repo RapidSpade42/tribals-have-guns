@@ -27,4 +27,159 @@
 		</Operation>
     </apply>
 	</Operation>
+
+	<!--Archer tribal patches-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<key>archer_toggle</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Archer"]/weaponTags</xpath>
+				<value>
+					<li>Gun</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+    <modId>RapidSpade.TribalsHaveGuns</modId>
+    <key>archer_range</key>
+    <defaultValue>80~80</defaultValue>
+    <apply>
+        <Operation Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="Tribal_Archer"]/weaponMoney</xpath>
+			<value>
+				<weaponMoney>{archer_range}</weaponMoney>
+			</value>
+		</Operation>
+	</apply>
+	</Operation>
+
+	<!--Warrior tribal patches-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<key>warrior_toggle</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Warrior"]/weaponTags</xpath>
+				<value>
+					<li>Gun</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+    <modId>RapidSpade.TribalsHaveGuns</modId>
+    <key>warrior_range</key>
+    <defaultValue>150~260</defaultValue>
+    <apply>
+        <Operation Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="Tribal_Warrior"]/weaponMoney</xpath>
+			<value>
+				<weaponMoney>{warrior_range}</weaponMoney>
+			</value>
+		</Operation>
+	</apply>
+	</Operation>
+	
+	<!--Hunter tribal patches-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<key>hunter_toggle</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Hunter"]/weaponTags</xpath>
+				<value>
+					<li>Gun</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+    <modId>RapidSpade.TribalsHaveGuns</modId>
+    <key>hunter_range</key>
+    <defaultValue>100~260</defaultValue>
+    <apply>
+        <Operation Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="Tribal_Hunter"]/weaponMoney</xpath>
+			<value>
+				<weaponMoney>{hunter_range}</weaponMoney>
+			</value>
+		</Operation>
+	</apply>
+	</Operation>
+
+	<!--Berserker tribal patches-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<key>berserker_toggle</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]/weaponTags</xpath>
+				<value>
+					<li>Gun</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+    <modId>RapidSpade.TribalsHaveGuns</modId>
+    <key>berserker_range</key>
+    <defaultValue>300~300</defaultValue>
+    <apply>
+        <Operation Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]/weaponMoney</xpath>
+			<value>
+				<weaponMoney>{berserker_range}</weaponMoney>
+			</value>
+		</Operation>
+	</apply>
+	</Operation>
+
+	<!--Heavy archer tribal patches-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<key>heavyarcher_toggle</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]/weaponTags</xpath>
+				<value>
+					<li>Gun</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.UseSetting">
+    <modId>RapidSpade.TribalsHaveGuns</modId>
+    <key>heavyarcher_range</key>
+    <defaultValue>100~260</defaultValue>
+    <apply>
+        <Operation Class="PatchOperationReplace">
+			<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]/weaponMoney</xpath>
+			<value>
+				<weaponMoney>{heavyarcher_range}</weaponMoney>
+			</value>
+		</Operation>
+	</apply>
+	</Operation>
+
+	<!--Ranged chief tribal patches-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>RapidSpade.TribalsHaveGuns</modId>
+		<key>chief_toggle</key>
+		<defaultValue>true</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Tribal_RangedChief"]/weaponTags</xpath>
+				<value>
+					<li>Gun</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
 </Patch>
