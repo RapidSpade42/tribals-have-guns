@@ -10,34 +10,26 @@
 				<font>Medium</font>
 				<anchor>Middle</anchor>
 			</li>
-			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			
-			<!--Tribal_Penitent settings-->
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>penitent_toggle</key>
-				<label>Enable guns for penitent tribals?</label>
-				<defaultValue>false</defaultValue>
-				<tooltip>If enabled, penitent tribals have a chance to spawn with guns.</tooltip>
-			</li>
-			<li Class="XmlExtensions.Setting.Text">
-				<text>Change min/max amount of money available for weapons:</text>
-			</li>
-			<li Class="XmlExtensions.Setting.Range">
-				<key>penitent_range</key>
-				<defaultValue>90~150</defaultValue>
-				<min>0</min>
-				<max>1000</max>
-			</li>
-			
+					
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			
 			<!--Tribal_Archer settings-->
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Archer Tribal Settings</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>archer_toggle</key>
 				<label>Enable guns for archer tribals?</label>
 				<defaultValue>false</defaultValue>
 				<tooltip>If enabled, archer tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>archer_makeshift</key>
+				<label>Enable VWE makeshift gun spawn chance?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>Will ONLY work if VWE - Makeshift is installed!</tooltip>
 			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Change min/max amount of money available for weapons:</text>
@@ -52,11 +44,22 @@
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			
 			<!--Tribal_Warrior settings-->
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Warrior Tribal Settings</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>warrior_toggle</key>
 				<label>Enable guns for warrior tribals?</label>
 				<defaultValue>true</defaultValue>
 				<tooltip>If enabled, warrior tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>warrior_makeshift</key>
+				<label>Enable VWE makeshift gun spawn chance?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>Will ONLY work if VWE - Makeshift is installed!</tooltip>
 			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Change min/max amount of money available for weapons:</text>
@@ -71,11 +74,22 @@
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			
 			<!--Tribal_Hunter settings-->
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Hunter Tribal Settings</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>hunter_toggle</key>
 				<label>Enable guns for hunter tribals?</label>
 				<defaultValue>true</defaultValue>
 				<tooltip>If enabled, hunter tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>hunter_makeshift</key>
+				<label>Enable VWE makeshift gun spawn chance?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>Will ONLY work if VWE - Makeshift is installed!</tooltip>
 			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Change min/max amount of money available for weapons:</text>
@@ -89,31 +103,23 @@
 			
 			<li Class="XmlExtensions.Setting.GapLine"/>
 			
-			<!--Tribal_Berserker settings-->
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>berserker_toggle</key>
-				<label>Enable guns for berserker tribals?</label>
-				<defaultValue>false</defaultValue>
-				<tooltip>If enabled, berserker tribals have a chance to spawn with guns.</tooltip>
-			</li>
-			<li Class="XmlExtensions.Setting.Text">
-				<text>Change min/max amount of money available for weapons:</text>
-			</li>
-			<li Class="XmlExtensions.Setting.Range">
-				<key>berserker_range</key>
-				<defaultValue>300~300</defaultValue>
-				<min>0</min>
-				<max>1000</max>
-			</li>
-			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			
 			<!--Tribal_HeavyArcher settings-->
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Heavy Archer Tribal Settings</text>
+				<font>Medium</font>
+				<anchor>Middle</anchor>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>heavyarcher_toggle</key>
 				<label>Enable guns for heavy archer tribals?</label>
 				<defaultValue>false</defaultValue>
 				<tooltip>If enabled, heavy archer tribals have a chance to spawn with guns.</tooltip>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>heavyarcher_makeshift</key>
+				<label>Enable VWE makeshift gun spawn chance?</label>
+				<defaultValue>false</defaultValue>
+				<tooltip>Will ONLY work if VWE - Makeshift is installed!</tooltip>
 			</li>
 			<li Class="XmlExtensions.Setting.Text">
 				<text>Change min/max amount of money available for weapons:</text>
@@ -124,6 +130,9 @@
 				<min>0</min>
 				<max>1000</max>
 			</li>
+
+			<!--Reset settings button-->
+			<li Class="XmlExtensions.Setting.ResetSettings"/>
 		</settings>
 	</XmlExtensions.SettingsMenuDef>
 </Defs>
